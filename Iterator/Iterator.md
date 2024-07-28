@@ -1,82 +1,3 @@
-Ad: isim olarak ingilizce kullanılacaklar
-Sınıf: yaratımsal, yapısal, devranışsal
-Amaç: Daha iyi bir şekilde yazılım geliştirmek
-Yapı: OOP üzerinde genellikle kullanılacaktır.
-Sonuçlar: Örnek uygulamalar ile pekiştirmeler yapılacak.
-
-
-Desen Sınıfları => Yaratımsal, Yapısal, Davranışsal olarak 3 sınıfa ayrılır.
-Yaratımsal: desenler şunlardır => Abstract Factory, Builder, Factory Method, Prototype ve Singelton 
-    - İlklendirmenin soyutlaştırılması ( interface, arayüz ),
-    - Sistem nesnelerinin yaratılmasından bağımsız hale gelmesi
-    - Sınıf ve nesne desenleri 
-    - Nesnelerin ilklendirilmesi gizli
-    - Yaratımsal nesneler; Ne, kim, nasıl ve  ne zaman hakkında bilgiler verir.
-
-Desen Kapsamları =>  Sınıf ve Nesne olarak 2'ye ayrılır.
-
-
-# Design Patterns
-
-Yazılım geliştirme, karmaşık problemleri çözmek için kullanılan güçlü bir araçtır. Ancak bu güç, beraberinde karmaşıklık ve tekrar eden sorunları da getirir. İşte bu noktada **design patterns**  ( Tasarıım Desenleri ) imdadımıza yetişir. Design patterns, yazılım tasarımında sıkça karşılaşılan sorunlara önceden belirlenmiş, test edilmiş ve tekrar kullanılabilir çözümler sunar. 
-
-/Bu yazımda, design patterns’lerin ne olduğunu, neden önemli olduklarını, örneklerle birlikte daha derinlemesine inceleyeceğiz ve projelerinizde nasıl kullanabileceğinizi öğreneceksiniz  
-
-**Ad**: isim olarak ingilizce kullanılacaktır.
-**Sınıf: yaratımsal**, **yapısal**, **davranışsal**
-**Amaç:** Daha iyi bir şekilde yazılım geliştirmek
-**Yapı:** *OOP* üzerinde genellikle kullanılacaktır.
-**Sonuçlar:** Örnek uygulamalar ile pekiştirmeler yapılacak.
-
-Desen Sınıfları => **Yaratımsal,** **Yapısal**, **Davranışsal** olarak 3 sınıfa ayrılır.
-
-## Yaratımsal Desenler
-
-> - İlklendirmenin soyutlaştırılması ( interface, arayüz ),
-- Sistem nesnelerinin yaratılmasından bağımsız hale gelmesi
-- Sınıf ve nesne desenleri
-- Nesnelerin ilklendirilmesi gizli
-- Yaratımsal nesneler; Ne, kim, nasıl ve  ne zaman hakkında bilgiler verir.
-> 
-- Singelton
-- Abstract
-- Factory,
-- Builder,
-- Factory
-- Method,
-- Prototype
-
-## Yapısal Desenler
-
-> Sınıf ve nesneler  ile daha büyük yapıların oluşturulmasına odaklanır.
-> 
-
-> Kalıtım (inheritance) yerine bileşim (composition) tercih eder.
-> 
-- Adapter,
-- Bridge,
-- Composite,
-- Decorator,
-- Fecade,
-- Flyweight,
-- Proxy
-
-## Davranışsal Desenler
-
-> Algoritmaların ve nesneler arası sorumlulukların atanması ile ilgilidir.
-> 
-- Chain of Responsibility
-- Command
-- Interpreter
-- Iterator
-- Mediator
-- Memento
-- Observer
-- State
-- Strategy
-- Template
-- Visitor
-
 ### Iterator Design Pattern
 
 Iterator: Yineleyici, tekrarlayıcı
@@ -123,7 +44,7 @@ Bu örnek, Iterator deseninin koleksiyonlar arasında gezinti yapmayı nasıl so
 
 </aside>
 
-```shell
+```csharp
 https://github.com/1omerozturk/Design-Patterns/tree/main/Iterator
 ```
 
