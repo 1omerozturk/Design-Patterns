@@ -1,0 +1,16 @@
+Ad: isim olarak ingilizce kullanılacaklar
+Sınıf: yaratımsal, yapısal, devranışsal
+Amaç: Daha iyi bir şekilde yazılım geliştirmek
+Yapı: OOP üzerinde genellikle kullanılacaktır.
+Sonuçlar: Örnek uygulamalar ile pekiştirmeler yapılacak.
+
+
+Desen Sınıfları => Yaratımsal, Yapısal, Davranışsal olarak 3 sınıfa ayrılır.
+Yaratımsal: desenler şunlardır => Abstract Factory, Builder, Factory Method, Prototype ve Singelton 
+    - İlklendirmenin soyutlaştırılması ( interface, arayüz ),
+    - Sistem nesnelerinin yaratılmasından bağımsız hale gelmesi
+    - Sınıf ve nesne desenleri 
+    - Nesnelerin ilklendirilmesi gizli
+    - Yaratımsal nesneler; Ne, kim, nasıl ve  ne zaman hakkında bilgiler verir.
+
+Desen Kapsamları =>  Sınıf ve Nesne olarak 2'ye ayrılır.
