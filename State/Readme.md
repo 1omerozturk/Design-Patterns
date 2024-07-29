@@ -11,7 +11,7 @@
 
 **State Design Pattern UML Diyagramı:**
 
-![images.png](https://lh3.googleusercontent.com/proxy/0vfEvMsKC-oiTQDtCoEHAx7JowPx6i-jj3mkxkYZ6Bb1i3G8ZeZ5sbeauh8UzMB0Wd8THjUbU1CHcDeycng5vd82cMISMjcqQ5GRKrOMXHfbHYLtyULcy5k)
+![images.png](https://reactiveprogramming.io/_next/image?url=%2Fbooks%2Fpatterns%2Fimg%2Fpatterns-articles%2Fstate-diagram.png&w=3840&q=75)
 
 Bu UML diyagramı, **State** (Durum) tasarım desenini göstermektedir. State deseni, bir nesnenin iç durumuna göre davranışını değiştirmesine olanak tanır. Bu desen, nesnenin durumlarını ve bu durumlara göre nasıl davrandığını soyutlar. State deseninin ana bileşenleri şunlardır:
 
