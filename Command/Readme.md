@@ -9,7 +9,7 @@
 
 UML diyagramı verilen Command Design Pattern:
 
-![command.gif](Design%20Patterns%20500c060e26924d6380d9c84b9de845e4/command.gif)
+![command.png](https://miro.medium.com/v2/resize:fit:1200/1*lN94pwMoBbW-EwLHOEFn7g.gif)
 
 Bu UML diyagramı, **Command** (Komut) tasarım desenini,  bir işlemi (komutu) nesne olarak temsil etmeyi sağlar. Bu desen, işlemleri parametrik hale getirir ve işlemler arasında geri al (*undo*) ve yeniden yap (*redo*) gibi işlemleri desteklemeyi kolaylaştırır. 
 
