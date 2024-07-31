@@ -8,7 +8,7 @@
 
 Factory Method Design Pattern UML diyagramı örneği: 
 
-![Factory Method Design Pattern](https://res.cloudinary.com/dft5dlcya/image/upload/v1676800936/limosyn.com/blog/images/c9473c58-54de-46d6-9f05-d4b51d2b6339/example_of_factory_design_pattern.png)
+![Factory Method Design Pattern](../images/factory_design_pattern.png)
 
 Factory Method Design Pattern
 
