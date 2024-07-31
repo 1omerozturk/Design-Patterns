@@ -8,13 +8,7 @@
 
 Proxy Design Pattern UML diyagramı:
 
-![https://alkanfatih.com/wp-content/uploads/2023/02/proxy.png](https://alkanfatih.com/wp-content/uploads/2023/02/proxy.png)
-
-![https://www.researchgate.net/publication/224198176/figure/fig2/AS:667774309388288@1536221210042/Observer-pattern-running-example.png](https://www.researchgate.net/publication/224198176/figure/fig2/AS:667774309388288@1536221210042/Observer-pattern-running-example.png)
-
-![https://www.notion.soSingleton%20b1c1d9db80d446b4a0475f88daa4c911/singleton_desing_pattern.png](https://www.notion.soSingleton%20b1c1d9db80d446b4a0475f88daa4c911/singleton_desing_pattern.png)
-
-![https://www.researchgate.net/publication/224198176/figure/fig2/AS:667774309388288@1536221210042/Observer-pattern-running-example.png](https://www.researchgate.net/publication/224198176/figure/fig2/AS:667774309388288@1536221210042/Observer-pattern-running-example.png)
+![https://alkanfatih.com/wp-content/uploads/2023/02/proxy.png](../images/proxy.png)
 
 Proxy deseninde üç ana bileşen bulunur:
 
