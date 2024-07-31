@@ -372,3 +372,243 @@ https://github.com/1omerozturk/Design-Patterns/tree/main/State
 ---
 
 ---
+
+### Abstract Factory Design Pattern
+
+- **Abstract:** soryut, **Factory:** fabrika, imalathane, yapımevi…
+- Kit ( takım çantası, alet takımı ) diğer bilinen isimleridir.
+- Factory Method deseni nesneleri üretir.
+- Nesne yaratımsal desendir.
+- **Amaç:** Somut sınıflarını belirtmeden bağlantılı ya da bağımlı olan nesneler grubunu yaratacak bir ara yüz sunmak.
+- Yeni ürün desteği zayıftır, bu yüzden fazladan kod yazılması demektir.
+- Somut sınıfların ayrıştırılmasını sağlar.
+- İsimleri sadece yaratıldığı yerde geçerler.
+- Uygulamalarda genelde tek bir factory olur yani Singleton durlar.
+
+Abstract Factory Design Pattern UML diyagramı: 
+
+![https://miro.medium.com/v2/resize:fit:1400/1*pkGMrOjW8zXf1HAsjsrytA.png](https://miro.medium.com/v2/resize:fit:1400/1*pkGMrOjW8zXf1HAsjsrytA.png)
+
+Bu UML diyagramı, **Abstract Factory** tasarım desenini göstermektedir. Abstract Factory deseni, ilgili nesnelerin ailelerini, onların somut sınıflarını belirtmeden oluşturmak için kullanılan bir creational (yaratıcı) tasarım desenidir. Bu desen, çeşitli ürünlerin oluşturulmasını soyutlamak ve istemcinin (client) hangi somut sınıfları kullandığını bilmesini engellemek için kullanılır.
+
+Diyagramın ana bileşenleri ve işlevleri şu şekildedir:
+
+1. **AbstractFactory**:
+    - Ürün ailesinin her bir türünü oluşturmak için soyut yöntemler tanımlar. Örnekte, `CreateProductA()` ve `CreateProductB()` yöntemleri bulunmaktadır.
+2. **ConcreteFactory1 ve ConcreteFactory2**:
+    - `AbstractFactory` arayüzünü uygularlar ve her biri belirli ürün ailesinin somut nesnelerini oluşturur.
+    - `ConcreteFactory1`, `ProductA1` ve `ProductB1` nesnelerini oluşturur.
+    - `ConcreteFactory2`, `ProductA2` ve `ProductB2` nesnelerini oluşturur.
+3. **AbstractProductA ve AbstractProductB**:
+    - Ürün ailesindeki her bir ürün türü için ortak bir ara yüz tanımlarlar.
+    - Örnekte, `AbstractProductA` ve `AbstractProductB` ürün türleri bulunmaktadır.
+4. **ProductA1, ProductA2, ProductB1 ve ProductB2**:
+    - `AbstractProductA` ve `AbstractProductB` ara yüzlerini uygularlar ve belirli somut ürünleri temsil ederler.
+    - `ProductA1` ve `ProductA2`, `AbstractProductA` ara yüzünü uygular.
+    - `ProductB1` ve `ProductB2`, `AbstractProductB` ara yüzünü uygular.
+5. **Client (İstemci)**:
+    - Abstract Factory ve Abstract Product ara yüzlerini kullanarak ürün ailelerinin nesnelerini oluşturur ve kullanır.
+    - İstemci, hangi somut sınıfın kullanıldığını bilmez; sadece soyut arayüzleri kullanır.
+
+Günlük Hayattan Örnek:
+
+Bir mobilya mağazası düşünün. Bu mağaza, farklı stillerde mobilyalar (modern, klasik) satıyor. Her stil, bir ürün ailesi (sandalye, masa) içerir.
+
+- **AbstractFactory**: Mobilya Fabrikası
+    - `CreateChair()`: Sandalye oluşturma metodu
+    - `CreateTable()`: Masa oluşturma metodu
+- **ConcreteFactory1**: Modern Mobilya Fabrikası
+    - `CreateChair()`: Modern Sandalye oluşturur
+    - `CreateTable()`: Modern Masa oluşturur
+- **ConcreteFactory2**: Klasik Mobilya Fabrikası
+    - `CreateChair()`: Klasik Sandalye oluşturur
+    - `CreateTable()`: Klasik Masa oluşturur
+- **AbstractProductA**: Sandalye ara yüzü
+- **AbstractProductB**: Masa ara yüzü
+- **ProductA1**: Modern Sandalye
+- **ProductA2**: Klasik Sandalye
+- **ProductB1**: Modern Masa
+- **ProductB2**: Klasik Masa
+- **Client**: Mobilya mağazası
+    - Hangi tür mobilya (modern veya klasik) kullanılacağını belirler ve ilgili fabrika sınıfını kullanarak mobilya oluşturur.
+
+Bu örnek, Abstract Factory deseninin nasıl çalıştığını ve farklı ürün ailelerinin nasıl oluşturulduğunu göstermektedir.
+
+<aside>
+🔑 Absract Factory design pattern örneğine aşağıdaki [**linkten](https://github.com/1omerozturk/Design-Patterns/tree/main/Abstract_Factory) [](https://github.com/1omerozturk/Design-Patterns/tree/main/Iterator)**ulaşabilirsiniz:
+
+</aside>
+
+```bash
+https://github.com/1omerozturk/Design-Patterns/tree/main/Abstract_Factory
+```
+
+[Design-Patterns/Abstract_Factory at main · 1omerozturk/Design-Patterns](https://github.com/1omerozturk/Design-Patterns/tree/main/Abstract_Factory)
+
+---
+
+---
+
+### Singleton Design Pattern
+
+- **Singleton**: Tekil, tekil kalıp anlamlarına gelmektedir.
+- Nesne yaratımsal bir tasarım desenidir.
+- Çok iş parçacıklıdır (multithreaded).
+- Static Instance () { return uniqueInstance; }
+- Static yapıdadır.
+- **Amaç:** Bir sınıftan yalnızca bir nesnenin olması ve bu nesneye global erişim için bir nokta sağlanmasıdır.
+- Yapılandırıcısı ⇒ `constructor` : `private` olarak tanımlanır.
+- Genelde veri tabanı, konfigürasyon, logger vb. özel bilgileri içeren sınıflarda sadece bir noktadan erişim sağlamak gerektiğinden kullanılır.
+
+Singleton Design Pattern UML diyagramı:
+
+![https://media.geeksforgeeks.org/wp-content/uploads/20231207174652/Screenshot-2023-12-07-174635.png](https://media.geeksforgeeks.org/wp-content/uploads/20231207174652/Screenshot-2023-12-07-174635.png)
+
+![https://www.notion.soSingleton%20b1c1d9db80d446b4a0475f88daa4c911/singleton_desing_pattern.png](https://www.notion.soSingleton%20b1c1d9db80d446b4a0475f88daa4c911/singleton_desing_pattern.png)
+
+Bu desen iki temel öğe içerir:
+
+1. **Singleton Sınıfı**: Bu sınıf kendi örneğini oluşturur ve ona bir erişim noktası sağlar.
+2. **Client**: Singleton sınıfının örneğini kullanır.
+- **Singleton**: Singleton sınıfı, kendi örneğini saklayan statik bir `instance` değişkeni içerir. Bu sınıfın `getInstance()` metodu, sınıfın tek örneğini döner. Eğer örnek henüz oluşturulmadıysa, `getInstance()` metodu tarafından oluşturulur.
+- **Client**: Singleton sınıfının örneğine erişir ve onu kullanır.
+
+🔑 Absract Factory design pattern örneğine aşağıdaki [**linkten](https://github.com/1omerozturk/Design-Patterns/tree/main/Singleton) **ulaşabilirsiniz:
+
+```bash
+https://github.com/1omerozturk/Design-Patterns/tree/main/Singleton
+```
+
+[Design-Patterns/Singleton at main · 1omerozturk/Design-Patterns](https://github.com/1omerozturk/Design-Patterns/tree/main/Singleton)
+
+---
+
+---
+
+### Adapter Design Pattern
+
+- **Adapter:** Adaptör, uyarlayan anlamlarına gelmektedir.
+- Diğer isimleri: Wrapper, sarmalayan, saran.
+- **Amaç:** Bir sınıfın ara yüzünü, istemcilerin beklediği ara yüze dönüştürmek.
+- Uyumsuzluk problemlerini önlemek için kullanılır.
+- Hem sınıf hem de nesne yapısal bir tasarım desenidir.
+
+![https://upload.wikimedia.org/wikipedia/commons/e/e5/W3sDesign_Adapter_Design_Pattern_UML.jpg](https://upload.wikimedia.org/wikipedia/commons/e/e5/W3sDesign_Adapter_Design_Pattern_UML.jpg)
+
+- Adapter deseni, sınıfların birlikte çalışmasını sağlarken, var olan kodun değiştirilmesine gerek kalmadan, arayüzlerin uyumsuzluklarını giderir.
+
+Adapter deseninde dört ana bileşen bulunur:
+
+1. **Client (İstemci)**: Adapt edilmiş arayüzü kullanarak çalışır.
+2. **Target (Hedef)**: İstemcinin çalışmak istediği arayüz.
+3. **Adaptee (Uyarlanan)**: Adapt edilmesi gereken mevcut sınıf.
+4. **Adapter**: Adaptee'yi Target arayüzüne uyarlayan sınıf.
+- Günlük hayat örneği:
+    
+    Bir şarj cihazı (Adapter) aracılığıyla bir cep telefonunu (Client) eski tip priz (Adaptee) ile şarj etmeyi örnek olarak verebiliriz. Hayatımızda fark etmeden en fazla kullandığımız yapılardan biridir Adapter ( dönüştürücü ) yapıları. 
+    
+
+<aside>
+🔑 Adapter design pattern örneğine aşağıdaki [**linkten](https://github.com/1omerozturk/Design-Patterns/tree/main/Adapter) [](https://github.com/1omerozturk/Design-Patterns/tree/main/Iterator)**ulaşabilirsiniz:
+
+</aside>
+
+```bash
+https://github.com/1omerozturk/Design-Patterns/tree/main/Adapter
+```
+
+[Design-Patterns/Adapter at main · 1omerozturk/Design-Patterns](https://github.com/1omerozturk/Design-Patterns/tree/main/Adapter)
+
+---
+
+---
+
+### Observer Design Pattern
+
+- **Observer**: Gözlemci, izelyici anlamlarına gelmektedir.
+- Bilinen diğer isimleri: Dependents:bağımlılar, Publish-Subscribe: Yayınla-Abonel ol
+- Nesne davranışsaldır.
+- **Amaç:** Nesneler arasında birden-çoka ( one-to-many ) bağımlılık tanımla ve bir nesne durum değiştirdiğinde bağımlı olanların otomatik güncellenmesini sağlamaktır. ( Bildirim yapıları vs olabilir. )
+
+Observer Design Pattern UML diyagramı:
+
+![https://www.dofactory.com/img/diagrams/net/observer.png](https://www.dofactory.com/img/diagrams/net/observer.png)
+
+![https://www.researchgate.net/publication/224198176/figure/fig2/AS:667774309388288@1536221210042/Observer-pattern-running-example.png](https://www.researchgate.net/publication/224198176/figure/fig2/AS:667774309388288@1536221210042/Observer-pattern-running-example.png)
+
+![https://www.notion.soSingleton%20b1c1d9db80d446b4a0475f88daa4c911/singleton_desing_pattern.png](https://www.notion.soSingleton%20b1c1d9db80d446b4a0475f88daa4c911/singleton_desing_pattern.png)
+
+![https://www.researchgate.net/publication/224198176/figure/fig2/AS:667774309388288@1536221210042/Observer-pattern-running-example.png](https://www.researchgate.net/publication/224198176/figure/fig2/AS:667774309388288@1536221210042/Observer-pattern-running-example.png)
+
+Observer tasarım deseni dört ana bileşenden oluşur:
+
+1. **Subject (Konu)**: Gözlemlenen nesnedir. Bir dizi gözlemciyi (observers) tutar ve durumu değiştiğinde onları bilgilendirir.
+2. **Observer (Gözlemci)**: Subject'in durumundaki değişiklikler hakkında bilgilendirilen nesnedir.
+3. **ConcreteSubject (Somut Konu)**: Subject arayüzünü uygular ve durumu saklar. ConcreteObserver nesnelerine bildirimler gönderir.
+4. **ConcreteObserver (Somut Gözlemci)**: Observer arayüzünü uygular ve Subject'in durumunu senkronize eder.
+
+UML Diyagramı Açıklaması
+
+- **Subject**: Observer nesnelerini ekleme (`Attach`), çıkarma (`Detach`), ve bilgilendirme (`Notify`) işlevlerini tanımlar.
+- **Observer**: Subject'in durum değişiklikleri hakkında bilgi almak için `Update` işlevini tanımlar.
+- **ConcreteSubject**: Subject arayüzünü uygular ve durumu saklar. `GetState` işlevi ile durumu döner.
+- **ConcreteObserver**: Observer arayüzünü uygular ve Subject'in durumunu senkronize eder. `Update` işlevi ile Subject'ten güncellenmiş durumu alır.
+
+🔑 Observer design pattern örneğine aşağıdaki [linkten](https://github.com/1omerozturk/Design-Patterns/tree/main/Observer) ulaşabilirsiniz:
+
+```bash
+https://github.com/1omerozturk/Design-Patterns/tree/main/Observer
+```
+
+[Design-Patterns/Observer at main · 1omerozturk/Design-Patterns](https://github.com/1omerozturk/Design-Patterns/tree/main/Observer)
+
+---
+
+---
+
+### Proxy Design Pattern
+
+- **Proxy**: Vekil anlamına gelmektedir.
+- Bilinen diğer isimleri: Surrogate
+- Nesne yapısaldır.
+- **Amaç:** Bir nesneye erişim kontrol etmek için o nesneye bir vekil nesne sağlamak.
+- Proxy Design Pattern ⇒ ***Uzak Vekil**, **Sanal Vekil**, **Koruyucu Vekil***, ***Akıllı Referans***.
+
+Proxy Design Pattern UML diyagramı:
+
+![https://alkanfatih.com/wp-content/uploads/2023/02/proxy.png](https://alkanfatih.com/wp-content/uploads/2023/02/proxy.png)
+
+![https://www.researchgate.net/publication/224198176/figure/fig2/AS:667774309388288@1536221210042/Observer-pattern-running-example.png](https://www.researchgate.net/publication/224198176/figure/fig2/AS:667774309388288@1536221210042/Observer-pattern-running-example.png)
+
+![https://www.notion.soSingleton%20b1c1d9db80d446b4a0475f88daa4c911/singleton_desing_pattern.png](https://www.notion.soSingleton%20b1c1d9db80d446b4a0475f88daa4c911/singleton_desing_pattern.png)
+
+![https://www.researchgate.net/publication/224198176/figure/fig2/AS:667774309388288@1536221210042/Observer-pattern-running-example.png](https://www.researchgate.net/publication/224198176/figure/fig2/AS:667774309388288@1536221210042/Observer-pattern-running-example.png)
+
+Proxy deseninde üç ana bileşen bulunur:
+
+1. **Subject**: Gerçek nesne ile proxy nesnesi arasındaki ortak arayüzdür.
+2. **RealSubject**: Asıl işlevselliği gerçekleştiren gerçek nesnedir.
+3. **Proxy**: Gerçek nesneye erişimi kontrol eden aracı nesnedir. RealSubject nesnesine referans tutar ve onun işlevselliğini çağırır.
+
+**UML Diyagramı Açıklaması**
+
+- **Client**: Subject arayüzünü kullanarak Proxy veya RealSubject nesnesine istekte bulunur.
+- **Subject**: Ortak bir arayüzdür ve `Request` metodunu tanımlar.
+- **RealSubject**: Subject arayüzünü uygular ve asıl işlevselliği gerçekleştiren nesnedir.
+- **Proxy**: Subject arayüzünü uygular, RealSubject nesnesine bir referans tutar ve onun işlevselliğini kontrol eder.
+
+Proxy Design pattern günlük hayat örneği:
+
+Proxy tasarım deseni için güncel hayat örneği olarak "***banka hesabına erişim***" senaryosunu ele alalım. Banka hesabı gerçek nesne (RealSubject), müşteri temsilcisi proxy, ve müşteri ise client olarak düşünülebilir. Müşteri, müşteri temsilcisine (proxy) ulaşarak banka hesabındaki işlemleri gerçekleştirmek ister. Müşteri temsilcisi, müşterinin kimliğini doğrular ve uygun olduğu takdirde işlemi gerçekleştirmek için banka hesabına erişim sağlar.
+
+🔑 Proxy design pattern örneğine aşağıdaki [linkten](https://github.com/1omerozturk/Design-Patterns/tree/main/Observer) ulaşabilirsiniz:
+
+```bash
+https://github.com/1omerozturk/Design-Patterns/tree/main/Proxy
+```
+
+[Design-Patterns/Proxy at main · 1omerozturk/Design-Patterns](https://github.com/1omerozturk/Design-Patterns/tree/main/Proxy)
+
+---
+
+---
