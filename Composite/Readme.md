@@ -18,7 +18,7 @@ Bileşim içerisindeki tüm nesnelere aynı şekilde davranma.
 
 **Composite** ( Bileşim ) tasarım deseni UML diyagramı.
 
-![Composite_Design_Pattern_UML.jpg](Design%20Patterns%20500c060e26924d6380d9c84b9de845e4/Composite_Design_Pattern_UML.jpg)
+![Composite_Design_Pattern_UML.jpg](../images/composite.jpg)
 
 Desenin ana bileşenleri şunlardır:
 
