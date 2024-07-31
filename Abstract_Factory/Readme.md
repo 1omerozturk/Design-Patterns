@@ -9,7 +9,7 @@
 
 Abstract Factory Design Pattern UML diyagramı: 
 
-![https://miro.medium.com/v2/resize:fit:1400/1*pkGMrOjW8zXf1HAsjsrytA.png](https://miro.medium.com/v2/resize:fit:1400/1*pkGMrOjW8zXf1HAsjsrytA.png)
+![https://miro.medium.com/v2/resize:fit:1400/1*pkGMrOjW8zXf1HAsjsrytA.png](../images/abs_fac.png)
 
 Bu UML diyagramı, **Abstract Factory** tasarım desenini göstermektedir. Abstract Factory deseni, ilgili nesnelerin ailelerini, onların somut sınıflarını belirtmeden oluşturmak için kullanılan bir creational (yaratıcı) tasarım desenidir. Bu desen, çeşitli ürünlerin oluşturulmasını soyutlamak ve istemcinin (client) hangi somut sınıfları kullandığını bilmesini engellemek için kullanılır.
 
