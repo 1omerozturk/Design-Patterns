@@ -6,7 +6,7 @@
 - Uyumsuzluk problemlerini önlemek için kullanılır.
 - Hem sınıf hem de nesne yapısal bir tasarım desenidir.
 
-![https://upload.wikimedia.org/wikipedia/commons/e/e5/W3sDesign_Adapter_Design_Pattern_UML.jpg](https://upload.wikimedia.org/wikipedia/commons/e/e5/W3sDesign_Adapter_Design_Pattern_UML.jpg)
+![https://upload.wikimedia.org/wikipedia/commons/e/e5/W3sDesign_Adapter_Design_Pattern_UML.jpg](../images/adapter.jpg)
 
 - Adapter deseni, sınıfların birlikte çalışmasını sağlarken, var olan kodun değiştirilmesine gerek kalmadan, arayüzlerin uyumsuzluklarını giderir.
 
