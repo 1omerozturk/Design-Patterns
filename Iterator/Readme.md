@@ -11,7 +11,7 @@ Bilinen diğer adı **Cursor**; imleç
 - **Nesne davranışsal** bir tasarım desenidir.
 - Aşağıda bir Iterator design patterns UML diyagramı verilmiştir.
 
-![https://www.oodesign.com/images/design_patterns/behavioral/iterator_implementation_-_uml_class_diagram.gif](https://www.oodesign.com/images/design_patterns/behavioral/iterator_implementation_-_uml_class_diagram.gif)
+![https://www.oodesign.com/images/design_patterns/behavioral/iterator_implementation_-_uml_class_diagram.gif](../images/iterator.gif)
 
 Bu UML sınıf diyagramı, **Iterator** tasarım desenini göstermektedir. Desenin ana bileşenleri şunlardır:
 
