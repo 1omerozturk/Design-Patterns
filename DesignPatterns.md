@@ -76,7 +76,7 @@ Bilinen diğer adı **Cursor**; imleç
 - **Nesne davranışsal** bir tasarım desenidir.
 - Aşağıda bir Iterator design patterns UML diyagramı verilmiştir.
 
-![https://www.oodesign.com/images/design_patterns/behavioral/iterator_implementation_-_uml_class_diagram.gif](https://www.oodesign.com/images/design_patterns/behavioral/iterator_implementation_-_uml_class_diagram.gif)
+![https://www.oodesign.com/images/design_patterns/behavioral/iterator_implementation_-_uml_class_diagram.gif](./images/iterator.gif)
 
 Bu UML sınıf diyagramı, **Iterator** tasarım desenini göstermektedir. Desenin ana bileşenleri şunlardır:
 
@@ -139,7 +139,7 @@ Bileşim içerisindeki tüm nesnelere aynı şekilde davranma.
 
 **Composite** ( Bileşim ) tasarım deseni UML diyagramı.
 
-![Composite_Design_Pattern_UML.jpg](Design%20Patterns%20500c060e26924d6380d9c84b9de845e4/Composite_Design_Pattern_UML.jpg)
+![Composite_Design_Pattern_UML.jpg](./images/composite.jpg)
 
 Desenin ana bileşenleri şunlardır:
 
@@ -198,7 +198,7 @@ https://github.com/1omerozturk/Design-Patterns/tree/main/Composite
 
 UML diyagramı verilen Command Design Pattern:
 
-![command.gif](Design%20Patterns%20500c060e26924d6380d9c84b9de845e4/command.gif)
+![command.gif](./images/cmmndgif.gif)
 
 Bu UML diyagramı, **Command** (Komut) tasarım desenini,  bir işlemi (komutu) nesne olarak temsil etmeyi sağlar. Bu desen, işlemleri parametrik hale getirir ve işlemler arasında geri al (*undo*) ve yeniden yap (*redo*) gibi işlemleri desteklemeyi kolaylaştırır. 
 
@@ -265,7 +265,7 @@ https://github.com/1omerozturk/Design-Patterns/tree/main/Command
 
 **State Design Pattern UML Diyagramı:**
 
-![images.png](Design%20Patterns%20500c060e26924d6380d9c84b9de845e4/images.png)
+![images.png](./images/state.jpg)
 
 Bu UML diyagramı, **State** (Durum) tasarım desenini göstermektedir. State deseni, bir nesnenin iç durumuna göre davranışını değiştirmesine olanak tanır. Bu desen, nesnenin durumlarını ve bu durumlara göre nasıl davrandığını soyutlar. State deseninin ana bileşenleri şunlardır:
 
@@ -319,7 +319,7 @@ https://github.com/1omerozturk/Design-Patterns/tree/main/State
 
 Factory Method Design Pattern UML diyagramı örneği: 
 
-![Factory Method Design Pattern](Design%20Patterns%20500c060e26924d6380d9c84b9de845e4/example_of_factory_design_pattern.png)
+![Factory Method Design Pattern](./images/factory_design_pattern.png)
 
 Factory Method Design Pattern
 
@@ -387,7 +387,7 @@ https://github.com/1omerozturk/Design-Patterns/tree/main/State
 
 Abstract Factory Design Pattern UML diyagramı: 
 
-![https://miro.medium.com/v2/resize:fit:1400/1*pkGMrOjW8zXf1HAsjsrytA.png](https://miro.medium.com/v2/resize:fit:1400/1*pkGMrOjW8zXf1HAsjsrytA.png)
+![https://miro.medium.com/v2/resize:fit:1400/1*pkGMrOjW8zXf1HAsjsrytA.png](./images/abs_fac.png)
 
 Bu UML diyagramı, **Abstract Factory** tasarım desenini göstermektedir. Abstract Factory deseni, ilgili nesnelerin ailelerini, onların somut sınıflarını belirtmeden oluşturmak için kullanılan bir creational (yaratıcı) tasarım desenidir. Bu desen, çeşitli ürünlerin oluşturulmasını soyutlamak ve istemcinin (client) hangi somut sınıfları kullandığını bilmesini engellemek için kullanılır.
 
@@ -462,9 +462,7 @@ https://github.com/1omerozturk/Design-Patterns/tree/main/Abstract_Factory
 
 Singleton Design Pattern UML diyagramı:
 
-![https://media.geeksforgeeks.org/wp-content/uploads/20231207174652/Screenshot-2023-12-07-174635.png](https://media.geeksforgeeks.org/wp-content/uploads/20231207174652/Screenshot-2023-12-07-174635.png)
-
-![https://www.notion.soSingleton%20b1c1d9db80d446b4a0475f88daa4c911/singleton_desing_pattern.png](https://www.notion.soSingleton%20b1c1d9db80d446b4a0475f88daa4c911/singleton_desing_pattern.png)
+![https://media.geeksforgeeks.org/wp-content/uploads/20231207174652/Screenshot-2023-12-07-174635.png](./images/singleton.png)
 
 Bu desen iki temel öğe içerir:
 
@@ -493,7 +491,7 @@ https://github.com/1omerozturk/Design-Patterns/tree/main/Singleton
 - Uyumsuzluk problemlerini önlemek için kullanılır.
 - Hem sınıf hem de nesne yapısal bir tasarım desenidir.
 
-![https://upload.wikimedia.org/wikipedia/commons/e/e5/W3sDesign_Adapter_Design_Pattern_UML.jpg](https://upload.wikimedia.org/wikipedia/commons/e/e5/W3sDesign_Adapter_Design_Pattern_UML.jpg)
+![https://upload.wikimedia.org/wikipedia/commons/e/e5/W3sDesign_Adapter_Design_Pattern_UML.jpg](./images/adapter.jpg)
 
 - Adapter deseni, sınıfların birlikte çalışmasını sağlarken, var olan kodun değiştirilmesine gerek kalmadan, arayüzlerin uyumsuzluklarını giderir.
 
@@ -532,13 +530,7 @@ https://github.com/1omerozturk/Design-Patterns/tree/main/Adapter
 
 Observer Design Pattern UML diyagramı:
 
-![https://www.dofactory.com/img/diagrams/net/observer.png](https://www.dofactory.com/img/diagrams/net/observer.png)
-
-![https://www.researchgate.net/publication/224198176/figure/fig2/AS:667774309388288@1536221210042/Observer-pattern-running-example.png](https://www.researchgate.net/publication/224198176/figure/fig2/AS:667774309388288@1536221210042/Observer-pattern-running-example.png)
-
-![https://www.notion.soSingleton%20b1c1d9db80d446b4a0475f88daa4c911/singleton_desing_pattern.png](https://www.notion.soSingleton%20b1c1d9db80d446b4a0475f88daa4c911/singleton_desing_pattern.png)
-
-![https://www.researchgate.net/publication/224198176/figure/fig2/AS:667774309388288@1536221210042/Observer-pattern-running-example.png](https://www.researchgate.net/publication/224198176/figure/fig2/AS:667774309388288@1536221210042/Observer-pattern-running-example.png)
+![https://www.dofactory.com/img/diagrams/net/observer.png](./images/observer.png)
 
 Observer tasarım deseni dört ana bileşenden oluşur:
 
@@ -576,14 +568,7 @@ https://github.com/1omerozturk/Design-Patterns/tree/main/Observer
 
 Proxy Design Pattern UML diyagramı:
 
-![https://alkanfatih.com/wp-content/uploads/2023/02/proxy.png](https://alkanfatih.com/wp-content/uploads/2023/02/proxy.png)
-
-![https://www.researchgate.net/publication/224198176/figure/fig2/AS:667774309388288@1536221210042/Observer-pattern-running-example.png](https://www.researchgate.net/publication/224198176/figure/fig2/AS:667774309388288@1536221210042/Observer-pattern-running-example.png)
-
-![https://www.notion.soSingleton%20b1c1d9db80d446b4a0475f88daa4c911/singleton_desing_pattern.png](https://www.notion.soSingleton%20b1c1d9db80d446b4a0475f88daa4c911/singleton_desing_pattern.png)
-
-![https://www.researchgate.net/publication/224198176/figure/fig2/AS:667774309388288@1536221210042/Observer-pattern-running-example.png](https://www.researchgate.net/publication/224198176/figure/fig2/AS:667774309388288@1536221210042/Observer-pattern-running-example.png)
-
+![https://alkanfatih.com/wp-content/uploads/2023/02/proxy.png](./images/proxy.png)
 Proxy deseninde üç ana bileşen bulunur:
 
 1. **Subject**: Gerçek nesne ile proxy nesnesi arasındaki ortak arayüzdür.
