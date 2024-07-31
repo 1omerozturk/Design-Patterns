@@ -12,7 +12,7 @@
 
 Singleton Design Pattern UML diyagramı:
 
-![singleton_desing_pattern.png](Singleton%20b1c1d9db80d446b4a0475f88daa4c911/singleton_desing_pattern.png)
+![singleton_desing_pattern.png](../images/singleton.png)
 
 Bu desen iki temel öğe içerir:
 
