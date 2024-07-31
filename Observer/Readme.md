@@ -7,13 +7,7 @@
 
 Observer Design Pattern UML diyagramı:
 
-![https://www.dofactory.com/img/diagrams/net/observer.png](https://www.dofactory.com/img/diagrams/net/observer.png)
-
-![https://www.researchgate.net/publication/224198176/figure/fig2/AS:667774309388288@1536221210042/Observer-pattern-running-example.png](https://www.researchgate.net/publication/224198176/figure/fig2/AS:667774309388288@1536221210042/Observer-pattern-running-example.png)
-
-![https://www.notion.soSingleton%20b1c1d9db80d446b4a0475f88daa4c911/singleton_desing_pattern.png](https://www.notion.soSingleton%20b1c1d9db80d446b4a0475f88daa4c911/singleton_desing_pattern.png)
-
-![https://www.researchgate.net/publication/224198176/figure/fig2/AS:667774309388288@1536221210042/Observer-pattern-running-example.png](https://www.researchgate.net/publication/224198176/figure/fig2/AS:667774309388288@1536221210042/Observer-pattern-running-example.png)
+![https://www.dofactory.com/img/diagrams/net/observer.png](../images/observer.png)
 
 Observer tasarım deseni dört ana bileşenden oluşur:
 
